@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insoften - Volunteer</title>
+    <link rel="stylesheet" href="./Styles/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="/Index.html"></a>Insoften</div>
+        <a href="#">Volunteer</a>
+    </header>
+    <div class="container">
+        <h1>Welcome to make the world smile</h1>
+        <p class="quote">"It's not how much we give but how much love we put into giving." <span class="author">- Mother Teresa</span></p>
+        <div class="images-container">
+            <img src="https://res.cloudinary.com/dbgvjxepr/image/upload/v1732454169/v_tvhada.png" alt="Teaching Children">
+            <img src="https://res.cloudinary.com/dbgvjxepr/image/upload/v1732454168/vv_rckd1z.jpg" alt="Creative Learning">
+        </div>
+        <p class="description">
+            <strong>Insoften</strong> is a social forum to enable the society and is conducting an event called 
+            <strong>'Teach For Mysuru'</strong> where they are training government school children in various courses. 
+            <a href="#">Click here</a> to volunteer the event.
+        </p>
+    </div>
+    <div class="contact-form">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are dedicated to making the world a better place by connecting volunteers to meaningful causes.</p>
+            </div>
+
+            <!-- Quick Links Section -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#volunteer">Volunteer</a></li>
+                </ul>
+            </div>
+
+            <!-- Social Media Section -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" aria-label="Facebook">🌐</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                    <a href="#" aria-label="Instagram">📸</a>
+                    <a href="#" aria-label="LinkedIn">💼</a>
+                </div>
+            </div>
+        </div>
+        <p>&copy; <span id="year"></span> Insoften. All rights reserved.</p>
+    </footer>
+
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            if (name && email && message) {
+                alert('Thank you for your message!');
+                // Here you can add code to send the form data to your server
+                // For example, using fetch() to send a POST request
+                // fetch('/send-message', {
+                //     method: 'POST',
+                //     headers: {
+                //         'Content-Type': 'application/json'
+                //     },
+                //     body: JSON.stringify({ name, email, message })
+                // }).then(response => response.json())
+                // .then(data => console.log(data))
+                // .catch(error => console.error('Error:', error));
+            } else {
+                alert('Please fill in all fields.');
+            }
+        });
+
+
+
+        // current year
+
+        const yearElement = document.getElementById('year');
+        const currentYear = new Date().getFullYear();
+        yearElement.textContent = currentYear;
+    </script>
+
+</body>
+</html>
