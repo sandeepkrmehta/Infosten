@@ -1,6 +1,6 @@
-# Charitable Teaching Event Registration Webpage
+# Insoften
 
-This project is a responsive web application designed for a social forum to help volunteers register for charitable teaching events. The webpage allows users to select a convenient location and offers a seamless experience across devices.
+Insoften is an application designed for a social forum with the objective of making the registration process easier for the volunteers to join the charitable teaching events by selecting their convenient location.
 
 ## Features
 
