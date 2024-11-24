@@ -12,7 +12,7 @@ Insoften is an application designed for a social forum with the objective of mak
 
 ## Screenshots
 
-![Responsive Layout](./path-to-your-screenshot.png)
+![Responsive Layout]((https://res.cloudinary.com/dbgvjxepr/image/upload/v1732457265/Screenshot_2024-11-24_181740_oyrq1i.png))
 
 ## Technologies Used
 
